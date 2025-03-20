@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar for NLP Event Planner -->
+        <div class="sidebar">
+            <h2>📅Event Planner</h2>
+            <p>Enter event details in natural language:</p>
+            <textarea id="eventInput" placeholder="E.g., Meeting at 3 PM tomorrow at Office"></textarea>
+            <button onclick="processEvent()">Add Event</button>
+            <div id="output">
+                <h3>Event Details:</h3>
+                <p><strong>Event:</strong> <span id="eventName">-</span></p>
+                <p><strong>Location:</strong> <span id="eventLocation">-</span></p>
+                <p><strong>Date & Time:</strong> <span id="eventDateTime">-</span></p>
+            </div>
+        </div>
+
+        <!-- Google Calendar Style UI -->
+        <!-- <div class="calendar-container"> -->
+            <!-- <div class="calendar-header">
+              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&showPrint=0&title=NLP%20Enhanced%20Smart%20Calendar&src=a2phdmVyaXlhNjZAZ21haWwuY29t&src=ODA4MjNkMmI1OGI1YjI2MjYxNDEzMGRiOTJlM2U4NDAzYTQ3MGUyYjViZWQ0YTJhMDZkYTQ5YTMwNTcyMDljZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%23B39DDB" style="border:solid 2px #0c0f00" width="1000" height="650" style="background:#DDEB9D;" frameborder="0" scrolling="no"></iframe>
+            </div> -->
+          <!-- </div> -->
+    <div>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKolkata&showPrint=0&title=NLP%20Enhanced%20Smart%20Calendar&src=ODA4MjNkMmI1OGI1YjI2MjYxNDEzMGRiOTJlM2U4NDAzYTQ3MGUyYjViZWQ0YTJhMDZkYTQ5YTMwNTcyMDljZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB&color=%230B8043" style="border:solid 2px black" width="1000" height="650" frameborder="1" scrolling="yes"></iframe>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/locales-all.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
